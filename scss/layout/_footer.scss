@@ -1,0 +1,96 @@
+/***** 06 - Layout - Footer  *******/
+
+.footer{
+	&-top{
+		border-top: 1px solid $border-color;
+		padding-top: 60px;
+		padding-bottom: 33px;
+		@include breakpoint(small){
+			padding-top: 76px;
+		}
+		@include breakpoint(medium){
+			padding-top: 95px;
+		}
+	}
+	&-bottom{
+		padding-bottom: 50px;
+	}
+}
+
+.footer-widget{
+	&.logo-widget{
+		margin-bottom: 35px;
+		@include breakpoint(medium){
+			margin-bottom: 0;
+		}
+	}
+	&.menu-one-widget{
+		margin-bottom: 29px;
+		@include breakpoint(medium){
+			margin-bottom: 0;
+		}
+	}
+	&.social-widget{
+		margin-bottom: 34px;
+		@include breakpoint(medium){
+			margin-bottom: 0;
+		}
+	}
+	&.menu-two-widget{
+		margin-bottom: 35px;
+		@include breakpoint(medium){
+			margin-bottom: 0;
+		}
+	}
+}
+
+.footer-menu{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	&__item{
+		padding-bottom: 14px;
+        &:last-child{
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+	}
+	&__link{
+		color: #000000;
+		text-transform: uppercase;
+		font-weight: 500;
+		&:hover{
+			color: $hover-color;
+		}
+	}
+	&--two{
+		.footer-menu__link{
+			font-weight: 400;
+			text-transform: capitalize;
+		}
+	}
+}
+
+.address-widget{
+	a{
+		text-transform: uppercase;
+		display: block;
+		color: #000000;
+		font-weight: 500;
+		margin-bottom: 13px;
+	}
+	p{
+		font-weight: 400;
+		line-height: 2;
+		color: #000000;
+		margin-top: 20px;
+		@include breakpoint(large){
+			margin-top: 40px;
+		}
+	}
+}
+
+.copyright-text{
+	padding-top: 25px;
+	border-top: 1px solid $border-color;
+}

@@ -1,0 +1,32 @@
+/***** 49 - Containers - Archive - Main Area  *******/
+
+.archive-page{
+	&.main-area{
+		padding-top: 55px;
+		padding-bottom: 60px;
+		@include breakpoint(small){
+			padding-top: 75px;
+			padding-bottom: 80px;
+		}
+		@include breakpoint(medium){
+			padding-top: 95px;
+			padding-bottom: 100px;
+		}
+	}
+	.blog-wrap{
+		margin-bottom: 50px;
+		@include breakpoint(medium){
+			margin-bottom: 0;
+		}
+	}
+	.page-details{
+		margin-bottom: 36px;
+		p{
+			text-transform: capitalize;
+			margin-bottom: 11px;
+		}
+		h4{
+			color: $secondary-color;
+		}
+	}
+}

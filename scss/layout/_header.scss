@@ -1,0 +1,132 @@
+/***** 05 - Layout - Header  *******/
+
+.header{
+	position: sticky;
+	top: 0;
+    width: 100%;
+    z-index: 99;
+	border-bottom: 1px solid $border-color;
+	background-color: #ffffff;
+	will-change: background-color;
+	transition: all .3s ease;
+	&__main{
+		display: flex;
+		align-items: center;
+		padding-top: 30px;
+		padding-bottom: 30px; 
+	}
+	&__col{
+		flex: 1 0 auto;
+		display: flex;
+		align-items: center;
+		&--left{
+			justify-content: flex-start;
+		}
+		&--right{
+			justify-content: flex-end;
+		}
+		&--center{
+			justify-content: center;
+		}
+	}
+	&__element{
+		&--author-btn{
+			padding-right: 25px;
+			display: flex;
+			position: relative;
+			&:before{
+				position: absolute;
+				content: "";
+				right: 0px;
+				top: 50%;
+				transform: translateY(-50%);
+				width: 1px;
+				height: 13px;
+				background-color: rgba(0, 0, 0, 0.1);
+			}
+		}
+		&--logo{
+			padding-left: 28px;
+		}
+	}
+	&--transparent{
+		position: absolute;
+		background-color: transparent;
+        border: none;
+        left: 0;
+		top: 0;
+		.header{ 
+			&__element{
+				&--author-btn{
+					&:before {
+						background-color: rgba( 255,255,255,0.6);
+					}
+				}
+				&--mobile-btn,
+				&--author-btn{
+					.hamburger{
+						span{
+							background-color: rgb(255, 255, 255);
+							&:before,
+							&:after{
+								background-color: rgb(255, 255, 255);
+							}
+						}
+					}
+				}
+				&--logo{
+					.logo {
+						&--dark{
+							display: none;
+						}
+						&--white{
+							display: inherit;
+						}
+					}
+				}
+			}
+		}
+		.mainmenu__link{
+			color: #fff;
+		}
+	}
+	&.is-sticky{
+		position: sticky;
+		background-color: #fff;
+		.header{
+			&__element{
+				.logo{
+					&--dark{
+						display: inherit;
+					}
+					&--white{
+						display: none;
+					}
+				}
+				.mainmenu__link{
+					color: $heading-color;
+				}
+				.social__link{
+					color: rgb(145, 145, 145);
+				}
+				&--author-btn{
+					&:before{
+						background-color: rgba(0, 0, 0, 0.6);
+					}
+				}
+				&--mobile-btn,
+				&--author-btn{
+					.hamburger{
+						span{
+							background-color: rgb(0, 0, 0);
+							&:before,
+							&:after{
+								background-color: rgb(0, 0, 0);
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

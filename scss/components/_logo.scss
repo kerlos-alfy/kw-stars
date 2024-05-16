@@ -1,0 +1,12 @@
+/***** 17 - Components - Logo  *******/
+
+.logo {
+	position: relative;
+    z-index: 1;
+	&--dark{
+		display: inherit;
+	}
+	&--white{
+		display: none;
+	}
+}

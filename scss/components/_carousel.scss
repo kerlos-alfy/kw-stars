@@ -1,0 +1,27 @@
+/***** 12 - Components - Carousel  *******/
+
+.swiper-button{
+	background: transparent;
+	border: none;
+	padding: 0;
+	color: $heading-color;
+	width: 20px;
+	height: 20px;
+    margin-top: calc(-1 * 20px/ 2);
+	&-prev,
+	&-next{
+		&:after{
+			display: none;
+		}
+		svg{
+			width: 100%;
+			height: 100%;
+		}
+	}
+	&-prev{
+		left: 20px;
+	}
+	&-next{
+		right: 20px;
+	}
+} 

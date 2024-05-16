@@ -1,0 +1,11 @@
+/***** 48 - Containers - Contact - Contact Form Area  *******/
+
+.contact-form-area{
+	padding-bottom: 60px;
+    @include breakpoint(small){
+        padding-bottom: 80px;
+    }
+    @include breakpoint(medium){
+        padding-bottom: 100px;
+    }
+}

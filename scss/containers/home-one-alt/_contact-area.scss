@@ -1,0 +1,14 @@
+/***** 37 - Containers - Home One Alt - Contact Area  *******/
+
+.home-one-alt{
+	&.contact-area{
+		padding-bottom: 60px;
+		@include breakpoint(small){
+			padding-bottom: 80px;
+		}
+		@include breakpoint(medium){
+			padding-bottom: 100px;
+		}
+	}
+}
+

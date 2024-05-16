@@ -1,0 +1,27 @@
+/***** 54 - Containers - Global - Page Header Area  *******/
+
+.page-header{
+	padding-top: 55px;
+    padding-bottom: 42px;
+    @include breakpoint(small){
+        padding-top: 75px;
+    }
+    @include breakpoint(medium){
+        padding-top: 95px;
+    }
+	h1{
+		margin-bottom: 17px;
+		font-size: 12px;
+		text-transform: capitalize;
+	}
+	p{
+		font-size: 20px;
+		line-height: 1.4;
+		font-weight: 700;
+		color: $secondary-color;
+		@include breakpoint(xsmall){
+			font-size: 24px;
+			line-height: 1.375;
+		}
+	}
+}

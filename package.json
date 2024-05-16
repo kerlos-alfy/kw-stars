@@ -1,0 +1,16 @@
+{
+  "name": "Fatima",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+	"scss": "node-sass --watch scss -o assets/css",
+	"css-compile": "node-sass --output assets/css scss/main.scss",
+	"css-watch": "npm run css-compile && npm run css-compile -- -w"
+  },
+  "author": "Raibow Themes",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^4.14.1"
+  }
+}

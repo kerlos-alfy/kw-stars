@@ -1,0 +1,19 @@
+/***** 36 - Containers - Home One Alt - Main Area  *******/
+
+.home-one-alt{
+	&.main-area{
+		margin-bottom: 47px;
+		@include breakpoint(small){
+			margin-bottom: 67px;
+		}
+		@include breakpoint(medium){
+			margin-bottom: 100px;
+		}
+	}
+	.recent-post-area{
+		margin-bottom: 50px;
+		@include breakpoint(medium){
+			margin-bottom: 0;
+		}
+	}
+}

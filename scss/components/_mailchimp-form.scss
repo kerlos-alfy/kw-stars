@@ -1,0 +1,79 @@
+/***** 18 - Components - Mailchimp Form  *******/
+
+.mailchimp{
+	&__text{
+		font-size: 16px;
+        font-weight: 300;
+        color: $heading-color;
+		margin-bottom: 36px;
+		@include breakpoint(small){
+			margin-bottom: 46px;
+		}
+		@include breakpoint(medium){
+			margin-bottom: 69px;
+			padding-top: 22px;
+		}
+	}
+}
+
+
+.mailchimp-form{
+	&--1{
+		.mailchimp-form{
+			&__group{
+				position: relative;
+			}
+			&__input{
+				background: #fff;
+				border-color: #fff;
+				border-radius: 5px;
+				height: 60px;
+				width: 100%;
+				padding-left: 25px;
+				padding-right: 50px;
+				font-size: 14px;
+				color: #63696a;
+				@include placeholder{
+					color: #63696a;
+				}
+			}
+			&__btn{
+				position: absolute;
+				right: 25px;
+				top: 50%;
+				transform: translateY(-50%);
+				color: rgb(99, 105, 106);
+				svg{
+					width: 18px;
+					height: 18px;
+				}
+			}
+		}
+	}
+	&--2{
+		.mailchimp-form{
+			&__group{
+				position: relative;
+			}
+			&__input{
+				font-size: 16px;
+				height: 50px;
+				color: $heading-color;
+				border: 0px;
+				border-bottom-width: 2px;
+				border-bottom-color: $heading-color;
+				border-style: solid;
+				padding-left: 0;
+				padding-bottom: 22px;
+				@include placeholder{
+					color: rgb(117, 117, 117);;
+				} 
+			}
+			&__btn{
+				position: absolute;
+				right: 0;
+				top: 0;
+			}
+		}
+	}
+}

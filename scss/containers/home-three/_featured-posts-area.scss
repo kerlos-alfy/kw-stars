@@ -1,0 +1,17 @@
+/***** 43 - Containers - Home Three - Featured Posts Area  *******/
+
+.home-three{
+	&.feature-post-area{
+		padding-top: 60px;
+		@include breakpoint(small){
+			padding-bottom: 50px;
+		}
+		@include breakpoint(medium){
+			padding-top: 100px;
+		}
+		.feature-post-slider{
+			padding-bottom: 45px;
+			border-bottom: 1px solid $border-color;
+		}
+	}
+}

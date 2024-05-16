@@ -1,0 +1,16 @@
+/***** 41 - Containers - Home Two Alt - Main Area  *******/
+
+.home-two-alt{
+	&.main-area{
+		margin-top: 50px;
+		margin-bottom: 50px;
+		@include breakpoint(small){
+			margin-top: 70px;
+			margin-bottom: 70px;
+		}
+		@include breakpoint(medium){
+			margin-top: 100px;
+			margin-bottom: 50px;
+		}
+	}
+}

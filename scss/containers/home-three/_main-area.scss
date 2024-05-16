@@ -1,0 +1,15 @@
+/***** 44 - Containers - Home Three - Main Area  *******/
+
+.home-three{
+	&.main-area{
+		margin-bottom: 47px;
+		@include breakpoint(small){
+			margin-bottom: 67px;
+			margin-top: 7px;
+		}
+		@include breakpoint(medium){
+			margin-bottom: 100px;
+			margin-top: 37px;
+		}
+	}
+}

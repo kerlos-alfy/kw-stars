@@ -1,0 +1,73 @@
+/***** 14 - Components - Contact Form  *******/
+
+.contact-form{
+	&__group{
+		margin-bottom: 30px;
+		position: relative;
+		&.has-value{
+            label{
+                top: -11px;
+            }
+        }
+
+		input:-webkit-autofill,
+		input:-webkit-autofill:hover, 
+		input:-webkit-autofill:focus,
+		textarea:-webkit-autofill,
+		textarea:-webkit-autofill:hover,
+		textarea:-webkit-autofill:focus,
+		select:-webkit-autofill,
+		select:-webkit-autofill:hover,
+		select:-webkit-autofill:focus {
+			-webkit-box-shadow: 0 0 0px 1000px #fff inset;
+		}
+	}
+	&__input{
+		background: rgb(255, 255, 255);
+		border-radius: 5px;
+		height: 60px;
+		padding-left: 25px;
+		padding-right: 25px;
+		font-size: 14px;
+		color: rgb(99, 105, 106);
+		&--textarea{
+			padding-top: 20px;
+			height: 120px;
+			@include breakpoint(xxsmall){
+				height: 150px;
+			}
+			@include breakpoint(xsmall){
+				height: 200px;
+			}
+			@include breakpoint(medium){
+				height: 240px;
+			}
+		}
+		&:focus{
+			& ~ label{
+				top: -11px;
+			}
+		}
+	}
+	&__label{
+		margin-bottom: 0px;
+		color: rgb(99, 105, 106);
+		font-weight: 500;
+		position: absolute;
+		left: 25px;
+		top: 20px;
+		background: rgb(255, 255, 255);
+		padding: 0px 5px;
+		transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+	}
+}
+
+.form-messege-active{
+	margin-top: 10px;
+	&.success{
+		color: $color-success;
+	}
+	&.error{
+		color: $color-danger;
+	}
+}

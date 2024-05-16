@@ -1,0 +1,174 @@
+/******************************
+
+INDEX:
+ 
+    00 - Base - Global
+    01 - Base - Typography
+
+    
+ 
+    10 - Components - Blog
+    11 - Components - Button
+   	12 - Components - Carousel
+    13 - Components - Comment
+	14 - Components - Contact Form
+	15 - Components - Call To Action
+	16 - Components - Hamburger
+	17 - Components - Logo
+	18 - Components - Mailchimp Form
+	19 - Components - Menu
+		19.01 - Main Menu 
+		19.02 - Mobile Menu 
+	20 - Components - Modal
+	21 - Components - OffCanvas
+	22 - Components - Pagination
+	23 - Components - Search Form
+	24 - Components - Section Title
+	25 - Components - Social
+	26 - Components - Widget
+
+	30 - Containers - Home One - Hero Area
+	31 - Containers - Home One - Feature Posts Area
+	32 - Containers - Home One - Main Area
+	33 - Containers - Home One - Contact Area
+	
+	34 - Containers - Home One Alt - Hero Area
+	35 - Containers - Home One Alt - Feature Posts Area
+	36 - Containers - Home One Alt - Main Area
+	37 - Containers - Home One Alt - Contact Area
+
+	38 - Containers - Home Two - Hero Area
+	39 - Containers - Home Two Alt - Main Area
+
+	40 - Containers - Home Two Alt - Hero Area
+	41 - Containers - Home Two Alt - Main Are
+
+	42 - Containers - Home Three - Author Area
+	43 - Containers - Home Three - Featured Posts Area
+	44 - Containers - Home Three - Main Area
+
+	45 - Containers - Single Blog - Single Blog Area
+	46 - Containers - Single Blog - Comments Area
+
+	47 - Containers - About - About Area
+	48 - Containers - Contact - Contact Form Area
+	49 - Containers - Archive - Main Area
+	50 - Containers - 404 - error Area
+
+	51 - Containers - Global - Instagram Area
+	52 - Containers - Global - Related Posts Area
+	53 - Containers - Global - Page Banner Area 
+	54 - Containers - Global - Page Header Area
+
+	60 - Utilities - Common
+
+
+
+
+******************************/
+
+
+/*
+    Defult Primary Color:       #ffd2d1
+    Default Border Color:       #e3e7e8b3
+    Default Text Color:         #090606
+    Default Heading Color:      #090606
+    Default Body Font:          'Montserrat', sans-serif;
+*/
+
+
+
+// Fonts
+
+// @import url('https://fonts.googleapis.com/css2?family=Marck+Script&family=Montserrat:wght@300;400;500;600;700&display=swa');
+ 
+ 
+// Base 
+
+@import 'base/variables';
+@import 'base/mixins';
+@import 'base/typography';
+
+// Components
+@import 'components/blog';
+@import 'components/button';
+@import 'components/carousel';
+@import 'components/comments';
+@import 'components/contact-form';
+@import 'components/cta';
+@import 'components/hamburger';
+@import 'components/logo';
+@import 'components/mailchimp-form';
+@import 'components/menu';
+@import 'components/modal';
+@import 'components/offcanvas';
+@import 'components/pagination';
+@import 'components/search-form';
+@import 'components/section-title';
+@import 'components/social'; 
+@import 'components/widget'; 
+
+// Layout
+
+@import 'layout/header';
+@import 'layout/footer';
+
+// Containers
+// Home One
+@import 'containers/home-one/hero';
+@import 'containers/home-one/feature-post';
+@import 'containers/home-one/main-area';
+@import 'containers/home-one/contact-area';
+
+// Home One Alt
+@import 'containers/home-one-alt/hero-area';
+@import 'containers/home-one-alt/feature-post-area';
+@import 'containers/home-one-alt/main-area';
+@import 'containers/home-one-alt/contact-area';
+
+// Home two
+@import 'containers/home-two/hero-area';
+@import 'containers/home-two/main-area';
+
+// Home two Alt
+@import 'containers/home-two-alt/hero-area';
+@import 'containers/home-two-alt/main-area';
+
+// Home three
+@import 'containers/home-three/author-area';
+@import 'containers/home-three/featured-posts-area';
+@import 'containers/home-three/main-area';
+
+// Single Blog
+@import 'containers/single-blog/single-blog';
+@import 'containers/single-blog/comments';
+
+// About
+@import 'containers/about/about';
+
+// Contact
+@import 'containers/contact/contact';
+
+// Archive
+@import 'containers/archive/main-area';
+
+// 404
+@import 'containers/404/error';
+
+// Global Continers
+@import 'containers/global/instagram-area';
+@import 'containers/global/related-posts';
+@import 'containers/global/page-banner';
+@import 'containers/global/page-header';
+
+
+// Utilities
+@import 'utilities/common';
+
+
+
+ 
+ 
+
+
+ 

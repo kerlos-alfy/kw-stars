@@ -1,0 +1,19 @@
+/***** 24 - Components - Section Title  *******/
+
+.section-title{
+	&__main{
+		font-size: 24px;
+        text-transform: uppercase;
+        position: relative;
+        &:after{
+            position: absolute;
+            content: "";
+            left: 2px;
+            bottom: 4px;
+            width: 120px;
+            height: 20px;
+            z-index: -1;
+            background-color: $primary-color;
+        }
+	}
+}

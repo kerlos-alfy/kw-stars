@@ -1,0 +1,29 @@
+/***** 23 - Components - Search Form  *******/
+
+.search-form{
+	position: relative;
+	&__input{
+		background: #fff;
+		border-color: #fff;
+		border-radius: 5px;
+		height: 60px;
+		width: 100%;
+		padding-left: 25px;
+		padding-right: 50px;
+		font-size: 14px;
+		color: #63696a;
+		@include placeholder{
+			color: #63696a;
+		}
+	}
+	&__btn{
+		position: absolute;
+		right: 25px;
+		top: 50%;
+		transform: translateY(-50%);
+		svg{
+			width: 18px;
+			height: 18px;
+		}
+	}
+}

@@ -1,0 +1,54 @@
+/***** 51 - Containers - Global - Instagram Area  *******/
+
+.instagram-area{
+	padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: $primary-color;
+    @include breakpoint(small){
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+}
+
+.instagram-title{
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+	align-items: center;
+	span{
+		padding-left: 4px;
+	}
+}
+
+#instagram-feed-2{
+	.instagram_gallery{
+		display: flex;
+		flex-wrap: wrap;
+		.instagram-image{
+			max-width: 100%;
+			flex-basis: 100%;
+			padding: 5px;
+			max-width: 245px;
+			margin: 0 auto;
+			@include breakpoint(xxsmall){
+				max-width: 50%;
+				flex-basis: 50%;
+				margin: 0;
+			}
+			@include breakpoint(small){
+				max-width: 33.3333%;
+				flex-basis: 33.3333%;
+			}
+			@include breakpoint(medium){
+				max-width: 20%;
+				flex-basis: 20%;
+			}
+			img{
+				border-radius: 8px;
+			}
+		}
+	}
+}

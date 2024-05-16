@@ -1,0 +1,20 @@
+/***** 40 - Containers - Home Two Alt - Hero Area  *******/
+
+.home-two-alt {
+	&.hero-area {
+		height: 800px;
+		position: relative;
+		display: flex;
+		align-items: center;
+		background: url(../img/banner/home-banner-03.jpg) no-repeat scroll center/cover;
+		@include breakpoint(xsmall){
+			height: 600px;
+		}
+		@include breakpoint(small){
+			height: 600px;
+		}
+		@include breakpoint(xlarge){
+			height: 750px;
+		}
+	}
+}

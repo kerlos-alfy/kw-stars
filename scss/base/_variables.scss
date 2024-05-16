@@ -1,0 +1,57 @@
+//===== Colors =====//
+ 
+$body-color: #090606;
+$primary-color: #ffd2d1;
+$primary-color-2: #70bdc2;
+$heading-color: #090606;
+$bg-color: #fff;
+$border-color:#e3e7e8b3;
+$secondary-color: #0e1b47;
+$hover-color: #f8777c;
+$hover-color-two: #ff4d4d;
+$hover-color-three: #70bdc2;
+$color-shark: #929496;
+$color-silver: #ababab;
+$color-nevada: #63696a;
+$color-white: #ffffff;
+$color-black: #000000;
+$color-success: #28a745;
+$color-info:  #17a2b8;
+$color-warning: #ffc107;
+$color-danger: #dc3545;
+$color-light:  #f8f9fa;
+
+$colorList: $primary-color, $primary-color-2;
+
+//==== Social Color =====//
+
+$facebook: #1561b7;
+$google-plus: #c2080f;
+$pinterest: #c2080f;
+$linkedin: #127bbb;
+$twitter: #4696f0;
+ 
+//===== Font Family =====//
+
+$body-font: 'Montserrat', sans-serif;
+$heading-font: $body-font;
+$seoge: "Segoe Script Regular";
+$mrack: 'Marck Script', cursive;
+
+
+//==== Font size =====//
+$body-font-size: 14px;
+
+//==== Line height ====//
+
+$line-height: 1.714;
+$heading-line-height: 1.857;
+
+
+//==== Border Radius ====//
+
+$border-radius: 4px;
+
+//==== Transition =====//
+
+$transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);

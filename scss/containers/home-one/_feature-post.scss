@@ -1,0 +1,29 @@
+/***** 31 - Containers - Home One - Feature Posts Area  *******/
+
+.home-one{
+	&.feature-post-area{
+		padding-top: 26px;
+		padding-bottom: 50px;
+		.feature-post-slider{
+			padding-bottom: 45px;
+			border-bottom: 1px solid $border-color;
+		}
+		@include breakpoint(small){
+			padding-top: 0;
+			margin-top: -8px;
+		}
+		@include breakpoint(medium){
+			margin-top: -250px;
+		}
+		@include breakpoint(large){
+			margin-top: -300px;
+		}
+		@include breakpoint(xlarge){
+			margin-top: -445px;
+		}
+		.feature-post-slider{
+			padding-bottom: 45px;
+			border-bottom: 1px solid rgba(227, 231, 232, 0.7);
+		}
+	} 
+}

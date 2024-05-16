@@ -1,0 +1,393 @@
+/***** 60 - Utilities - Common  *******/
+ 
+.wrapper{
+	position: relative;
+}
+
+// Color
+.color--primary{
+	color: $primary-color;
+}
+.color--white{
+	color: #fff;
+}
+
+// Background
+.bg--white{
+	background-color: $color-white;
+}
+
+
+
+/*-- Global Overlay --*/
+
+.global-overlay{
+	transition: $transition;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	visibility: hidden;
+	opacity: 0;
+	position: fixed;
+	background-color: rgba($heading-color, .7);
+	z-index: 1000;
+	&.overlay-open{
+		visibility: visible;
+		opacity: 1;
+	}
+}
+.body-open{
+	overflow: hidden;
+}
+
+/*-- Link Overlay --*/
+.overlay-link{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	text-indent: -99999px;
+}
+
+
+/*-- Google Map --*/
+
+#google-map{
+	height: 100%;
+	min-height: 300px;
+}
+
+
+/*-- Mailchimp Alerts --*/
+
+.mailchimp-alerts{
+	div:not(:empty){
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+	.mailchimp{
+		&-error{
+			color: red;
+		}
+		&-success{
+			color: green;	
+		}
+	}
+}
+
+/*-- Insta Feed --*/
+
+.instagram_gallery{
+	overflow: hidden;
+	img{
+		border-radius: 5px;
+	}
+}
+.mb{
+	&--14{
+		margin-bottom: 14px;
+	}
+	&--15{
+		margin-bottom: 15px;
+	}
+	&--20{
+		margin-bottom: 20px;
+	}
+	&--24{
+		margin-bottom: 24px;
+	}
+	&--26{
+		margin-bottom: 26px;
+	}
+	&--30{
+		margin-bottom: 30px;
+	}
+	&--31{
+		margin-bottom: 31px;
+	}
+	&--40{
+		margin-bottom: 40px;
+	}
+	&--46{
+		margin-bottom: 46px;
+	}
+	&--50{
+		margin-bottom: 50px;
+	}
+}
+.ml--10n{
+	margin-left: -10px;
+}
+.mt{
+	&--80{
+		margin-top: 80px;
+	}
+	@include breakpoint(medium){
+		&--md{
+			&-12{
+				margin-top: 12px;
+			}
+		}
+	}
+}
+
+// Color Templates
+
+@for $i from 1 through length($colorList) {
+    .template-color-#{$i}{
+    	a:hover, button:hover{
+    		color: nth($colorList, $i);
+    	}
+    	.color--primary{
+    		color: nth($colorList, $i) !important;
+    	}
+		.bg--primary{
+			background-color: nth($colorList, $i);
+		}
+		.btn{
+			&--primary{
+				background-color: nth($colorList, $i);
+			}
+		}
+		.mainmenu{
+			&__link{
+				&:hover{
+					color: inherit;
+				}
+				&:after{
+					background-color: nth($colorList, $i);
+				}
+			}
+		}
+		.offcanvas{
+			&__inner{
+				background-color: nth($colorList, $i);
+			}
+		}
+		.author-offcanvas{
+			.social__link{
+				color: #fafafa;
+				&:hover{
+					border-color: #fafafa;
+				}
+			}
+		}
+		.author-area{
+			background: nth($colorList, $i);
+		}
+		.blog{
+			&__link, &__quote{
+				background-color: nth($colorList, $i);
+				a{
+					&:hover{
+						color: #fff;
+					}
+				}
+			}
+			&__video{
+				&-overlay{
+					background-color: nth($colorList, $i);
+				}
+			}
+			&__category{
+				&:after{
+					background-color: nth($colorList, $i);
+				}
+			}
+			&__meta{
+				&-item{
+					a{
+						&:hover{
+							color: nth($colorList, $i);
+						}
+					}
+					&:after{
+						background-color: nth($colorList, $i);
+					}
+				}
+			}
+			&__video{
+				&-btn{
+					&:hover{
+						color: #fff;
+					}
+				}
+			}
+		}
+		.btn{
+			&--primary{
+				background-color: nth($colorList, $i);
+				border-color: nth($colorList, $i);
+				&:hover{
+					background-color: darken(nth($colorList, $i), 5); 
+					border-color: darken(nth($colorList, $i), 5); 
+					color: #fff;  
+				}
+			}
+			&--light{
+				&:hover{
+					background-color: nth($colorList, $i);
+					border-color: nth($colorList, $i);
+					color: #fff;
+				}
+			}
+		}
+		.section-title{
+			&__main{
+				&:after{
+					background-color: nth($colorList, $i);
+				}
+			}
+		}
+		.pagination{
+			&__link{
+				&:hover{
+					color: nth($colorList, $i);
+					border-color: nth($colorList, $i);
+				}
+				&.active{
+					border-color: nth($colorList, $i);
+					background-color: nth($colorList, $i);
+					&:hover{
+						border-color: nth($colorList, $i);
+						color: #fff;
+					}
+				}
+			}
+		}
+		.instagram-area{
+			background-color: nth($colorList, $i);
+		}
+		.cta{
+			&:after{
+				background-image: -moz-linear-gradient(45deg, nth($colorList, $i) 0%, rgba(248, 119, 124, 0) 100%);
+				background-image: -webkit-linear-gradient(45deg, nth($colorList, $i) 0%, rgba(248, 119, 124, 0) 100%);
+				background-image: -ms-linear-gradient(45deg, nth($colorList, $i) 0%, rgba(248, 119, 124, 0) 100%);
+			}
+		}
+		.single-blog{
+			&__video-overlay{
+				background-color: nth($colorList, $i);
+			}
+			&__category{
+				&:after{
+					background-color: nth($colorList, $i);
+				}
+			}
+			&__meta{
+				&-item{
+					a{
+						&:hover{
+							color: nth($colorList, $i);
+						}
+					}
+					&:after{
+						background-color: nth($colorList, $i);
+					}
+				}
+			}
+		}
+		@if $i == 2 {
+			.blog{
+				&__title{
+					a{
+						&:hover{
+							color: $hover-color-three;
+						}
+					}
+				}
+				&__date{
+					&:hover{
+						color: $hover-color-three;
+					}
+				}
+				&__btn{
+					&:hover{
+						color: $hover-color-three;
+					}
+				}
+				&__category{
+					&:hover{
+						color: inherit;
+					}
+					&--media{
+						&:hover{
+							color: #fff;
+						}
+					}
+				}
+				&--three-alt{
+					&__date, &__title a{
+						color: #fff;
+						&:hover{
+							color: #fff;
+							opacity: .6;
+						}
+					}
+				}
+			}
+			.social{
+				&__link{
+					&:hover{
+						color: $hover-color-three;
+					} 
+				}
+			}
+			.single-blog{
+				a{
+					&:hover{
+						color: $hover-color-three;
+					}
+				}
+				&__category{
+					&:hover{
+						color: $hover-color-three;
+					}
+				}
+				&__tags{
+					a{
+						&:hover{
+							color: $hover-color-three;
+						}
+					}
+				}
+			}
+		}
+    }
+}
+
+/* Scroll To TOp  */
+#scrollToTOp {
+	display: inline-block;
+	position: fixed;
+	transition: background-color .3s, 
+	  opacity .5s, visibility .5s;
+	opacity: 0;
+	visibility: hidden;
+	cursor: pointer;
+    width: 50px;
+    height: 50px;
+    background-color: #ffffff;
+    color: #f9004d;
+    right: 20px;
+    bottom: 60px;
+    text-align: center;
+    overflow: hidden;
+    border-radius: 50px;
+    z-index: 9811 !important;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+}
+#scrollToTOp svg {
+    transform: rotate(-90deg);
+    position: relative;
+    top: 13px;
+}
+#scrollToTOp.show {
+	opacity: 1;
+	visibility: visible;
+}
+
+
+

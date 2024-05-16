@@ -1,0 +1,61 @@
+/***** 11 - Components - Button  *******/
+
+.btn{
+	border-radius: 0;
+    font-size: 12px;
+    padding: 18px 30px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 500;
+	display: inline-block;
+	&--primary{
+		border: 1px solid $hover-color;
+		background-color: $hover-color;
+		color: #fff;
+	}
+	&--light{
+		border: 1px solid #fff;
+		background-color: #fff;
+		color: $heading-color;
+		text-transform: uppercase;
+		&:hover{
+			border-color: $hover-color;
+			background-color: $hover-color;
+			color: #fff;
+		}
+	}
+	&--shape{
+		&-rounded{
+			border-radius: 4px;
+		}
+	}
+	&--size{
+		&-large{ 
+			padding: 18px 30px;
+			@include breakpoint(xsmall){
+				padding: 22px 55px;
+			}
+		}
+		&-fullwidth{
+			width: 100%;
+			font-size: 13px;
+			letter-spacing: 1px;
+		}
+	}
+	&--icon{
+		span{
+			display: inline-flex;
+			align-items: center;
+			line-height: 1;
+			svg{
+				width: 16px;
+				height: 18px;
+			}
+		}
+	}
+	&:hover{
+		color: #fff;
+		background-color: $hover-color-two;
+		border-color: $hover-color-two; 
+	}
+}

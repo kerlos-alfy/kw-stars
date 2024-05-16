@@ -1,0 +1,19 @@
+/***** 32 - Containers - Home One - Main Area  *******/
+
+.home-one{
+	&.main-area{
+		margin-bottom: 47px;
+		@include breakpoint(small){
+			margin-bottom: 67px;
+		}
+		@include breakpoint(medium){
+			margin-bottom: 100px;
+		}
+	}
+	.recent-post-area{
+		margin-bottom: 50px;
+		@include breakpoint(medium){
+			margin-bottom: 0;
+		}
+	}
+}

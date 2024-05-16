@@ -1,0 +1,91 @@
+/***** 21 - Components - OffCanvas  *******/
+
+.offcanvas{
+	position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    transition: $transition;
+    z-index: 9999;
+    background: rgba(0,0,0,0.7);
+    overflow-y: hidden;
+    visibility: hidden;
+	opacity: 0;
+	&.open{
+		visibility: visible;
+		opacity: 1;
+		.offcanvas__inner{
+			transform: translateX(0%);
+		}
+	}
+	&__inner{
+		height: 100%;
+		cursor: default;
+		transition: $transition;
+		overflow-y: hidden;
+		background-color: $primary-color;
+		float: right;
+		width: 300px;
+		&.from-left{
+			float: left;
+			transform: translateX(-120%);
+		}
+		&.from-right{
+			float: right;
+			transform: translateX(120%);
+		}
+		@include breakpoint(xsmall){
+			width: 350px;
+		}
+		@include breakpoint(small){
+			width: 400px;
+		}
+	}
+	&__header{
+		background-color: #ffffff;
+		padding: 15px 40px;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		&-left{
+			flex: 1 0 auto;
+		}
+		&-right{
+			flex: 1 0 auto;
+			text-align: right;
+		}
+	}
+	&__body{
+		padding: 20px 30px 60px;
+		height: 100%;
+		@include breakpoint(xsmall){
+			padding: 20px 40px 60px;
+		}
+	}
+}
+
+.author-offcanvas{
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	&__figure{
+		width: 200px;
+		height: 200px;
+		img{
+			border-radius: 50%;
+			border: 15px solid #fff;
+		}
+	}
+	&__tagline{
+		margin-top: 5px;
+	}
+	&__bio{
+		margin-top: 15px;
+		margin-bottom: 15px;
+	}
+	.social{
+		margin-top: auto;
+		padding-bottom: 20px;
+	}
+}

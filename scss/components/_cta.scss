@@ -1,0 +1,71 @@
+/***** 15 - Components - Call To Action  *******/
+
+.cta{
+	position: relative;
+	margin-top: 60px;
+	background: url(../img/bg/cta-big-image.jpg) no-repeat scroll center/cover;
+    @include breakpoint(medium){
+        margin-top: 0;
+    }
+    &:after{
+        position: absolute;
+        content: "";
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        border-radius: 6px;
+        background-image: -moz-linear-gradient( 45deg, rgb(248,119,124) 0%, rgba(248,119,124,0) 100%);
+        background-image: -webkit-linear-gradient( 45deg, rgb(248,119,124) 0%, rgba(248,119,124,0) 100%);
+        background-image: -ms-linear-gradient( 45deg, rgb(248,119,124) 0%, rgba(248,119,124,0) 100%);
+    }
+	&__content{
+		position: relative;
+		z-index: 2;
+		color: #fff;
+		padding-left: 30px;
+		padding-top: 50px;
+		padding-bottom: 30px;
+		padding-right: 30px;
+		@include breakpoint(small){
+			padding-left: 40px;
+			padding-top: 80px;
+			padding-bottom: 50px;
+		}
+		@include breakpoint(large){
+			padding-left: 78px;
+			padding-top: 136px;
+			padding-bottom: 70px;
+		}
+	}
+	&__heading{
+		color: #fff;
+        font-size: 24px;
+        line-height: 1;
+        letter-spacing: v;
+        font-weight: 300;
+        margin-bottom: 30px;
+        span{
+            display: block;
+            font-family: $mrack;
+            font-size: 50px;
+            margin-top: 13px;
+            @include breakpoint(small){
+                font-size: 60px;
+            }
+        }
+	}
+	&__text{
+		max-width: 365px;
+        font-size: 16px;
+		font-weight: 300;
+		padding-bottom: 55px;
+		@include breakpoint(xsmall){
+			padding-bottom: 70px;
+		}
+		@include breakpoint(xlarge){
+			padding-bottom: 120px; 
+		}
+	}
+}  

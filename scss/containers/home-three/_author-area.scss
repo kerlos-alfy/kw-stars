@@ -1,0 +1,83 @@
+/***** 42 - Containers - Home Three - Author Area  *******/
+
+.author-area{
+	background-color: $primary-color;
+	padding-top: 60px;
+    padding-bottom: 50px;
+    @include breakpoint(small){
+        padding-top: 76px;
+        padding-bottom: 70px; 
+    }
+    @include breakpoint(medium){
+        padding-top: 100px;
+        padding-bottom: 100px; 
+    }
+    @include breakpoint(large){
+        padding-top: 140px;
+        padding-bottom: 140px; 
+    }
+    @include breakpoint(xlarge){
+        padding-top: 170px;
+        padding-bottom: 170px; 
+    }
+}
+
+.author{
+	&__img{
+		margin-bottom: 10px;
+		border-radius: 50%;
+		background-color: white;
+		text-align: center;
+		max-width: 250px;
+		height: 250px;
+		margin-left: auto;
+		margin-right: auto;
+		@include breakpoint(xsmall){
+			max-width: 300px;
+			height: 300px;
+		}
+		@include breakpoint(small){
+			margin-bottom: 0;
+		}
+		img{
+			border-radius: 50%;
+			border: 15px solid #fff;
+		}
+	}
+	&__info{
+		@include breakpoint(small){
+			padding-left: 35px;
+		}
+	}
+	&__title{
+        font-weight: 700;
+        color: #fff;
+		line-height: 1.1;
+		font-size: 28px;
+		@include breakpoint(xsmall){
+			font-size: 32px;
+		}
+		@include breakpoint(small){
+			font-size: 36px;
+		}
+		span{
+			font-weight: 300;
+		}
+	}
+	&__tagline{
+		color: #fff;
+		margin-bottom: 15px;
+		@include breakpoint(small){
+			margin-bottom: 24px;
+		}
+	}
+	&__bio{
+        font-size: 16px;
+        color: #fff;
+		font-weight: 300;
+		margin-bottom: 23px;
+		@include breakpoint(small){
+			margin-bottom: 33px;
+		}
+	}
+}
