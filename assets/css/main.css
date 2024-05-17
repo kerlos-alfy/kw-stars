@@ -3565,14 +3565,15 @@ button:active {
 .single-blog__header {
 	margin-bottom: 21px;
 }
-
+/* kerooooo */
 .single-blog__category {
 	display: inline-block;
 	position: relative;
 	text-transform: uppercase;
-	font-weight: 400;
-	font-size: 12px;
+	font-weight: 600;
+	font-size: 20px;
 	color: #090606;
+	font-family: "cairo";
 }
 .single-blog__category:after {
 	position: absolute;
@@ -3594,6 +3595,8 @@ button:active {
 	margin-top: 11px;
 	margin-bottom: 21px;
 	line-height: 1.4;
+	font-weight: 700;
+	font-family: "cairo";
 }
 @media (min-width: 768px) {
 	.single-blog__title {
@@ -4596,4 +4599,23 @@ button:active {
 .font-title {
 	font-family: "cairo";
 	font-weight: bold;
+}
+
+.pargraph1 {
+	font-family: "cairo";
+	font-weight: 600;
+	font-size: 20px !important;
+	text-align: center;
+	color: rgb(117, 10, 15);
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.pargraph2 {
+	font-family: "cairo";
+	font-weight: 600;
+	font-size: 20px !important;
+	text-align: center;
+	color: rgb(0, 0, 0);
+	margin-top: 20px;
+	margin-bottom: 20px;
 }
